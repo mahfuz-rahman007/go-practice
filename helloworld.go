@@ -4,15 +4,27 @@ import ("fmt")
 
 func main(){
 
-  var i = 15.5
-  var txt = "Hello World!"
+  /**
+    Data Types
+    1. Integer/Unsigned Integer
+    2. Float
+    3. String
+    4. Boolean
+  */
 
-  fmt.Printf("%v\n", i)
-  fmt.Printf("%#v\n", i)
-  fmt.Printf("%v%%\n", i)
-  fmt.Printf("%T\n", i)
+  var a int8 = 100;
 
-  fmt.Printf("%v\n", txt)
-  fmt.Printf("%#v\n", txt)
-  fmt.Printf("%T\n", txt)
+  var b uint8 = 100;
+
+  var c = false;
+
+  var d string = "hello";
+
+  fmt.Println(a);
+  fmt.Println(b);
+  fmt.Println(c);
+  fmt.Println(d);
+
+
+
 }
