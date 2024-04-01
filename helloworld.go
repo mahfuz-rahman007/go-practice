@@ -27,15 +27,16 @@ func main() {
   pers2.job = "Marketing"
   pers2.salary = 4500
 
-  // Access and print Pers1 info
-  fmt.Println("Name: ", pers1.name)
-  fmt.Println("Age: ", pers1.age)
-  fmt.Println("Job: ", pers1.job)
-  fmt.Println("Salary: ", pers1.salary)
 
-  // Access and print Pers2 info
-  fmt.Println("Name: ", pers2.name)
-  fmt.Println("Age: ", pers2.age)
-  fmt.Println("Job: ", pers2.job)
-  fmt.Println("Salary: ", pers2.salary)
+  printPerson(pers1);
+
+  printPerson(pers2);
+
+}
+
+func printPerson(person Person) {
+  fmt.Println("Name: ", person.name)
+  fmt.Println("Age: ", person.age)
+  fmt.Println("Job: ", person.job)
+  fmt.Println("Salary: ", person.salary)
 }
