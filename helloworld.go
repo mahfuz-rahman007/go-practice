@@ -1,37 +1,22 @@
 package main
-import ("fmt")
 
+import (
+	"fmt"
+)
 
-func main(){
+func main() {
+  numbers := []int{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+  // Original slice
+  fmt.Printf("numbers = %v\n", numbers)
+  fmt.Printf("length = %d\n", len(numbers))
+  fmt.Printf("capacity = %d\n", cap(numbers))
 
-var a = [2]int{1,2};
+  // Create copy with only needed numbers
+  neededNumbers := numbers[:len(numbers)-10]
+  numbersCopy := make([]int, len(neededNumbers))
+  copy(numbersCopy, neededNumbers)
 
-var b = [3]string{"a", "b", "c"};
-
-b[2] = "bullshit"; // element update
-
-d := [...]int{1,2,3,4,5,6}; // no length added
-
-g := [4]int{}; // not initialized
-
-l := [4]int{1,3}; // partially initialized
-
-m := [3]string{"a"} // partially initialized
-
-x := [5]string{1:"hello", 4:"ma"};
-
-fmt.Println(a);
-fmt.Println(b[1]);
-fmt.Println(b);
-fmt.Println(d);
-
-fmt.Println(g);
-fmt.Println(l);
-
-fmt.Println(m);
-
-fmt.Println(len(x)); // length of array
-
-
-
+  fmt.Printf("numbersCopy = %v\n", numbersCopy)
+  fmt.Printf("length = %d\n", len(numbersCopy))
+  fmt.Printf("capacity = %d\n", cap(numbersCopy))
 }
