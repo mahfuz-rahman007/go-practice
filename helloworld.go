@@ -4,18 +4,15 @@ import ("fmt")
 
 func main(){
 
-  var (
-    a int = 434
-    c = "hello"
-    d float32
-  )
+  var i = 15.5
+  var txt = "Hello World!"
 
-  fmt.Print(a, " ", "Hello World");
+  fmt.Printf("%v\n", i)
+  fmt.Printf("%#v\n", i)
+  fmt.Printf("%v%%\n", i)
+  fmt.Printf("%T\n", i)
 
-  fmt.Println(a)
-  // fmt.Println(b)
-  fmt.Println(c)
-  fmt.Println(d)
-
-  fmt.Printf("The value of v is %v and the type is %T \n", a,a);
+  fmt.Printf("%v\n", txt)
+  fmt.Printf("%#v\n", txt)
+  fmt.Printf("%T\n", txt)
 }
