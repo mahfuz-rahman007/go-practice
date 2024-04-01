@@ -4,19 +4,22 @@ import ("fmt")
 
 func main() {
 
-  num := 200;
+  day := 7
 
-  if num < 20 {
-
-    fmt.Println("Less than 20")
-
-  } else if (num > 20) {
-
-    fmt.Println("Higher than 20")
-
-  } else {
-
-    fmt.Println("This is 20")
-
+  switch day {
+  case 1:
+    fmt.Println("Monday")
+  case 2:
+    fmt.Println("Tuesday")
+  case 3:
+    fmt.Println("Wednesday")
+  case 4:
+    fmt.Println("Thursday")
+  case 5:
+    fmt.Println("Friday")
+  case 6:
+    fmt.Println("Saturday")
+  case 7:
+    fmt.Println("Sunday")
   }
 }
