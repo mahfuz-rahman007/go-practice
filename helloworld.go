@@ -6,13 +6,16 @@ import (
 
 func main() {
 
-	for i := 10; i > 0; i-- {
 
-		for j := 0; j < i; j++ {
-			fmt.Print(j)
-		}
 
-		fmt.Print("\n")
+  fruits := [3]string{"apple", "orange", "banana"}
+
+  for i := 0; i < len(fruits); i++ {
+    fmt.Printf("%v\t%v\n",i ,fruits[i]);
 	}
+
+  for idx, val := range fruits {
+     fmt.Printf("%v\t%v\n", idx, val)
+  }
 
 }
