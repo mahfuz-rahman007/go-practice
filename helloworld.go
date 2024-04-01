@@ -4,26 +4,33 @@ import ("fmt")
 
 func main(){
 
-  /**
-    Data Types
-    1. Integer/Unsigned Integer
-    2. Float
-    3. String
-    4. Boolean
-  */
+var a = [2]int{1,2};
 
-  var a int8 = 100;
+var b = [3]string{"a", "b", "c"};
 
-  var b uint8 = 100;
+b[2] = "bullshit"; // element update
 
-  var c = false;
+d := [...]int{1,2,3,4,5,6}; // no length added
 
-  var d string = "hello";
+g := [4]int{}; // not initialized
 
-  fmt.Println(a);
-  fmt.Println(b);
-  fmt.Println(c);
-  fmt.Println(d);
+l := [4]int{1,3}; // partially initialized
+
+m := [3]string{"a"} // partially initialized
+
+x := [5]string{1:"hello", 4:"ma"};
+
+fmt.Println(a);
+fmt.Println(b[1]);
+fmt.Println(b);
+fmt.Println(d);
+
+fmt.Println(g);
+fmt.Println(l);
+
+fmt.Println(m);
+
+fmt.Println(len(x)); // length of array
 
 
 
